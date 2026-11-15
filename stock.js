@@ -20,7 +20,8 @@ console.log(`Stock value at buying price: ${stockValue} XAF`);
 
 // STEP 5
 function profitPerUnit(product) {
-  return product.sell - product.buy;
+  const profit = product.sell - product.buy;
+  return profit;
 }
 
 const highestProfitProduct = products.reduce((best, current) =>
